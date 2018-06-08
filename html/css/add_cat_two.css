@@ -1,0 +1,27 @@
+.main {
+    width: 1200px;
+    margin:  0 auto;
+}
+.card-panel.subcarcard {
+    position:  relative;
+    top: 50px;
+}
+
+input#cat_img {
+    text-align:  center;
+    position:  relative;
+    top: 24px;
+    padding-left:  34px;
+}
+a.waves-effect.waves-light.btn.addsubcat {
+    position:  relative;
+    top: 11px;
+    background: black;
+}
+div.container { max-width: 1200px }
+div#example_wrapper {
+    background:  #fff;
+    position:  relative;
+    top: 100px;
+    padding: 44px;
+}

@@ -1,0 +1,148 @@
+/* global style sheet */
+/*===========================================================================header css=====================================*/
+body {
+    background: #F4F4F4;
+}
+section {
+  background: rgba(34, 34, 34, 0.05);
+  padding: 100px 0 70px;
+}
+aside {
+  padding: .5em 0;
+  border-top: 1px solid rgba(34, 34, 34, 0.08);
+}
+aside a, aside p {
+  display: inline-block;
+  color: #222;
+}
+aside p {
+  font-weight: bold;
+}
+.probox{
+    padding-top: 10px;
+}
+.proimg {
+    text-align: center;
+    width: 100%;
+}
+
+.hedbtn {
+	background: #fff !important;
+	box-shadow: none !important;
+   display: inline-block;
+   width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 1px rgba(34, 34, 34, 0.1);
+}
+.hedbtn a {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.hedbtn:hover{
+ background: #fff !important;
+}
+.hedbtn a > span {
+  position: relative;
+  z-index: 1;
+}
+.btn-1 {
+  background: #fff;
+}
+.btn-1 a {
+  color: #222;
+}
+.btn-1 a:hover {
+  color: #fff;
+}
+.btn-effect-1 a {
+  transition: color 0.55s cubic-bezier(0.77, 0, 0.275, 1);
+}
+.btn-effect-1 a:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #222;
+  transition: -webkit-transform 0.55s cubic-bezier(0.77, 0, 0.275, 1);
+  transition: transform 0.55s cubic-bezier(0.77, 0, 0.275, 1);
+  transition: transform 0.55s cubic-bezier(0.77, 0, 0.275, 1), -webkit-transform 0.55s cubic-bezier(0.77, 0, 0.275, 1);
+}
+.btn-effect-1[data-direction="left"] a:before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+.btn-effect-1[data-direction="left"] a:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+.proimg img {
+    width:  100px;
+}
+#products
+{
+    display: none;
+    height: 350px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #fff;
+    border: 2px dotted #bfbfbf2e;
+    bottom: 20px;
+    padding: 30px;
+     top: 100px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+#Concerns {
+    display: none;
+    height: 350px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px dotted #bfbfbf2e;
+    bottom: 20px;
+    padding: 30px;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+.row.herow {
+    background: rgb(0, 0, 0);
+}
+nav.henav {
+      background: linear-gradient(to bottom right, #040404 , #040404);
+    height: 100px;
+}
+.nav-wrapper.henavwrap {
+    max-width: 1200px;
+    margin:  0 auto;
+}
+ul.heul li a {
+    position:  relative;
+    color: #fff;
+    font-size:  18px;
+    font-weight:  500;
+    text-transform:  capitalize;
+    top: 14px;
+}
+/*=================================================================end header css=====================================*/
+
+.card input[type=text] {
+    border: 1px solid #00000030 !important;
+    border-radius: 50px !important;
+    padding-left: 15px !important;
+    width: calc(100% - 15px) !important;
+}
