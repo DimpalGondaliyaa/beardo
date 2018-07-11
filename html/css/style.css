@@ -87,18 +87,37 @@ aside p {
 .proimg img {
     width:  100px;
 }
-#products
+/*===============product img=========*/
+img.c1img {
+    float:  right;
+        position: relative;
+    left: 25px;
+    bottom: 13px;
+}
+img.c3img {
+    position: relative;
+    bottom: top;
+    top: 226px;
+    float: right;
+    left: 50px;
+}
+img.c2img {
+    position:  relative;
+    right:  28px;
+    bottom:  13px;
+}
+.products
 {
     display: none;
     height: 350px;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     position: absolute;
-    background-color: #fff;
-    border: 2px dotted #bfbfbf2e;
+   background-color: #fffbf2;
+    border: 2px dotted #d0b184;
     bottom: 20px;
     padding: 30px;
-     top: 100px;
+     top: 75px;
     z-index: 1;
     left: 0;
     right: 0;
@@ -120,11 +139,14 @@ aside p {
     right: 0;
 }
 .row.herow {
+  margin-bottom: 0px;
     background: rgb(0, 0, 0);
 }
 nav.henav {
-      background: linear-gradient(to bottom right, #040404 , #040404);
-    height: 100px;
+     /* background:linear-gradient(to bottom right, #52657a , #3c4b5d);*/
+     background-image: url('../images/nbg.png');
+    height: 65px;
+    line-height: 40px;
 }
 .nav-wrapper.henavwrap {
     max-width: 1200px;
@@ -137,6 +159,8 @@ ul.heul li a {
     font-weight:  500;
     text-transform:  capitalize;
     top: 14px;
+    font-family: 'Megrim', cursive;
+    font-weight: bold;
 }
 /*=================================================================end header css=====================================*/
 

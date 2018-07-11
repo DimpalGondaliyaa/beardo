@@ -12,6 +12,8 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -20,10 +22,9 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-
     <script src="<?php echo base_url(); ?>html/js/script.js"></script>
 
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
 
     <?php foreach($stylesheet as $fileName){ ?>
@@ -37,49 +38,32 @@
   $cc = $c->result_array();
 ?>
 
-<!-- 
-<section id="container">
-  <div id="loader">
-    <div class="rinkin_coffee"><span class="rinkin">e &nbsp;</span><span class="coffee">the Mard.</span></div><span class="slogan"> </span>
-    <div class="rectangle outlines"><span>B</span></div>
-    <div class="rectangle fill"><span>B</span></div>
-  </div>
-</section> -->
-
-<div class="row herow">
+<div class="row herow navbar-fixed">
      <nav class="henav">
         <div class="nav-wrapper henavwrap">
-          <a href="<?php echo base_url(); ?>home" class="brand-logo" ><img src="<?php echo base_url(); ?>html/images/li.jpg"> </a>
+         <!--  <a href="<?php echo base_url(); ?>home" class="brand-logo" ><img src="<?php echo base_url(); ?>html/images/li.jpg"> </a> -->
           <ul id="nav-mobile" class="right hide-on-med-and-down heul">
-            <?php foreach ($cc as $key => $cat1) { ?>
-            <li><a href="#" id="productsa"><?php echo $cat1['category_name']; ?></a></li>
-            <?php } ?>
-            <li><a href="collapsible.html">community</a></li>
-            <li><a href="collapsible.html">merchandise</a></li>
-            <li><a class="crtaa" href="#"><i class="large material-icons">shopping_cart</i></a></li>
+            <li><a href="<?= base_url(); ?>" id="home">home</a></li>
+            <li><a href="#" id="productsa">product </span></a></li>
+            <li><a href="#" id="beardA">beard</a></li>
+            <li><a href="#" id="hairA">hair</a></li>
+            <li><a href="#" id="skinA">skin</a></li>
+             <li><a href="<?= base_url(); ?>contact" id="contactt">contact</a></li>
+           <!--  <li><a href="#">combo</a></li> -->
           </ul>
         </div>
      </nav>
+
 </div>
-
-<style type="text/css">
-  a.crtaa span {
-    /* width: 258px; */
-    position:  relative;
-    bottom: 80px;
-    left: 24px;
-    background: #eae9e9;
-    width: 87px !important;
-    padding: 3px 11px;
-    border-radius: 42px;
-    /* height: 14px; */
-    font-size: 14px;
-    color:  black;
-}
-</style>
-
+<div class="logodiv">
+  <img src="<?php echo base_url(); ?>html/images/logoo.png">
+</div>
 <!--=================================================product part==========================-->
 <div class="products" id="products" >
+  <img class="c1img"  src="<?php echo base_url(); ?>html/images/c1.png ">
+  <img class="c2img"  src="<?php echo base_url(); ?>html/images/c2.png ">
+  <img class="c3img"  src="<?php echo base_url(); ?>html/images/c3.png ">
+  
     <div class="row">
           <div class="col s6 m2">
             <div class="probox">
@@ -151,9 +135,43 @@
 </div>
 <!--=================================================end product part==========================-->
 
+<!--=================================================beard part==========================-->
+<div class="products" id="beard" style="display: none;">
+    <img class="c1img"  src="<?php echo base_url(); ?>html/images/c1.png ">
+  <img class="c2img"  src="<?php echo base_url(); ?>html/images/c2.png ">
+  <img class="c3img"  src="<?php echo base_url(); ?>html/images/c3.png ">
+    <div class="row">
+          <div class="col s6 m2">
+            <div class="probox">
+                <div class="proimg">
+                    <img src="<?php echo base_url(); ?>html/images/products/hear-serum.jpg">
+                </div>
+                <div class="protitle hedbtn btn btn-1 btn-effect-1" data-direction="left">
+                    <a href="<?php echo base_url(); ?>Category_List"><span>HAIR</span></a>
+                </div>
+            </div>
+          </div>
 
-<!--=================================================Concerns part==========================-->
-<div class="products" id="Concerns" >
+           <div class="col s6 m2">
+            <div class="probox">
+                <div class="proimg">
+                    <img src="<?php echo base_url(); ?>html/images/products/skin.jpg">
+                </div>
+                <div class="protitle hedbtn btn btn-1 btn-effect-1" data-direction="left">
+                    <a href="<?php echo base_url(); ?>Category_List"><span>SKIN</span></a>
+                </div>
+            </div>
+          </div>
+
+    </div>
+</div>
+<!--=================================================end beard part==========================-->
+
+<!--=================================================hair part==========================-->
+<div class="products" id="hair" style="display: none;">
+    <img class="c1img"  src="<?php echo base_url(); ?>html/images/c1.png ">
+  <img class="c2img"  src="<?php echo base_url(); ?>html/images/c2.png ">
+  <img class="c3img"  src="<?php echo base_url(); ?>html/images/c3.png ">
     <div class="row">
           <div class="col s6 m2">
             <div class="probox">
@@ -166,28 +184,79 @@
             </div>
           </div>
 
-           <div class="col s6 m2">
+    </div>
+</div>
+<!--=================================================end Concerns part==========================-->
+
+<!--=================================================skin part==========================-->
+<div class="products" id="skin" style="display: none;">
+    <img class="c1img"  src="<?php echo base_url(); ?>html/images/c1.png ">
+  <img class="c2img"  src="<?php echo base_url(); ?>html/images/c2.png ">
+  <img class="c3img"  src="<?php echo base_url(); ?>html/images/c3.png ">
+    <div class="row">
+          <div class="col s6 m2">
             <div class="probox">
                 <div class="proimg">
-                    <img src="<?php echo base_url(); ?>html/images/products/acne.jpg">
+                    <img src="<?php echo base_url(); ?>html/images/products/hai-fall.jpg">
                 </div>
                 <div class="protitle btn hedbtn btn-1 btn-effect-1" data-direction="left">
-                    <a href="<?php echo base_url(); ?>Category_List"><span>acne</span></a>
+                    <a href="<?php echo base_url(); ?>Category_List"><span>hai-fall</span></a>
                 </div>
             </div>
           </div>
 
-      
     </div>
 </div>
 <!--=================================================end Concerns part==========================-->
 <body>
 
+
+
+<script type="text/javascript">
+$("#productsa").mouseenter(function() {
+      $("#products").fadeIn();
+});
+$("#products").mouseleave(function() {
+      $("#products").fadeOut();
+});
+
+$("#beardA").mouseenter(function() {
+      $("#beard").fadeIn();
+});
+$("#beard").mouseleave(function() {
+      $("#beard").fadeOut();
+});
+
+$("#hairA").mouseenter(function() {
+      $("#hair").fadeIn();
+});
+$("#hair").mouseleave(function() {
+      $("#hair").fadeOut();
+});
+
+$("#skinA").mouseenter(function() {
+      $("#skin").fadeIn();
+});
+$("#skin").mouseleave(function() {
+      $("#skin").fadeOut();
+});
+</script>
+
 <style type="text/css">
   @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
-@import url(https://fonts.googleapis.com/css?family=Eczar);
+  @import url(https://fonts.googleapis.com/css?family=Eczar);
 
-
+  a.crtaa span {
+    position:  relative;
+    bottom: 80px;
+    left: 24px;
+    background: #eae9e9;
+    width: 87px !important;
+    padding: 3px 11px;
+    border-radius: 42px;
+    font-size: 14px;
+    color:  black;
+}
 body{
   overflow: hidden;
 }
@@ -202,6 +271,19 @@ body{
       position: relative;
     overflow: hidden !important;
 
+}
+.logodiv img {
+    text-align:  center;
+    margin:  0 auto;
+        height: 160px;
+}
+
+.logodiv {
+    width: 100%;
+    margin:  0 auto;
+    text-align:  center;
+    position:  relative;
+   
 }
 
 #loader {
@@ -419,23 +501,6 @@ body{
               $('body').css('overflow','auto');
       }, 100);
 
-});
-</script>
-
-<script type="text/javascript">
-$("#productsa").mouseenter(function() {
-      $("#products").fadeIn();
-});
-$("#products").mouseleave(function() {
-      $("#products").fadeOut();
-});
-
-
-$("#Concernsa").mouseenter(function() {
-      $("#Concerns").fadeIn();
-});
-$("#Concerns").mouseleave(function() {
-      $("#Concerns").fadeOut();
 });
 </script>
 

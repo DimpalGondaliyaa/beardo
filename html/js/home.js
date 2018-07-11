@@ -39,3 +39,11 @@ $(document).ready(function() {
           owl.trigger('owl.prev');
       })
     });
+
+ /*=============================video js=================*/
+ $("iframe[src*='youtube']").css("width", "100%");
+var vidWidth = $("iframe[src*='youtube']").width();
+var vidHeight = vidWidth / 16 * 9;
+$("iframe[src*='youtube']").css("height", vidHeight);   
+
+ 

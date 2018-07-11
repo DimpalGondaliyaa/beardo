@@ -120,7 +120,7 @@
 
 			<div class="right">
 				<h1 class="total">Total: <span>177.16</span>€</h1>
-				<a class="btn checkbtn">Checkout</a>
+				<a class="btn checkbtn" href="<?= base_url(); ?>Checkout">Checkout</a>
 			</div>
 
 		</div>
